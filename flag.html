@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .stick {
+            height: 250px;
+            width: 10px;
+            background-color: black;
+            margin-left: 30px;
+            display: inline-block;
+        }
+
+        .flag {
+            width: 270px;
+            height: 150px;
+            background-color: transparent;
+            position: relative;
+            box-shadow: 0px 0px 90px 1px #989;
+            ;
+            margin-left: 40px;
+
+        }
+
+        .top {
+            height: 20px;
+            background-color: orange;
+            margin-left: 80px;
+            margin-right: 150px;
+
+        }
+
+        .orange {
+            width: 200px;
+            height: 20px;
+            background-color: orange;
+        }
+
+        .white {
+            width: 200px;
+            height: 20px;
+            background-color: whitesmoke;
+        }
+
+        .green {
+            width: 200px;
+            height: 20px;
+            background-color: green;
+
+        }
+
+        .border {
+            border: 1px solid black;
+            width: fit-content;
+            margin-left: 40px;
+            /* margin-top: -0px; */
+            animation-name: teja;
+            animation-duration: 5s;
+            animation-iteration-count: 1;
+            animation-fill-mode: forwards;
+        }
+
+        @keyframes teja {
+            from {
+                /* margin-top: -0px; */
+                transform: translateY(0px);
+            }
+
+            to {
+                /* margin-top: -250px; */
+                transform: translateY(-254px);
+            }
+        }
+
+
+        .wheel {
+            width: 20px;
+            height: 20px;
+            background-color: blue;
+            border-radius: 50%;
+            /* margin-top: -40px; */
+            animation-name: tiru;
+            animation-duration: 10s;
+            animation-iteration-count: initial;
+            animation-fill-mode: both;
+            visibility: hidden;
+        }
+
+        @keyframes tiru {
+            0% {
+                opacity: 0;
+                margin-left: 0px;
+                transform: translateY(-300px);
+            }
+
+            100% {
+                opacity: 1;
+                margin-left: 130px;
+                transform: translateY(-293px);
+                visibility: visible;
+
+            }
+        }
+
+        .heads {
+            width: 100px;
+            height: 100px;
+            border: 1px solid red;
+            border-radius: 50%;
+            margin-left: 20px;
+            background-color: gold;
+
+        }
+
+        .body {
+            width: 150px;
+            height: 150px;
+            border: 1px solid red;
+            background-color:cyan;
+
+        }
+        .leg1{
+            width: 30px;
+            height: 150px;
+            border: 1px solid red;
+            background-color: darksalmon;
+        }
+        .leg2{
+            width: 30px;
+            height: 150px;
+            border: 1px solid red;
+            margin-left: 120px;
+            margin-top: -152px;
+            background-color: darksalmon;
+            
+        }
+        .hand1{
+            width: 30px;
+            height: 150px;
+            border: 1px solid red;
+            margin-left: -90px;
+            margin-top: -350px;
+            transform: rotate(120deg);
+            animation-name: prasanth;
+            animation-duration: 2s;
+            animation-fill-mode: forwards;
+            animation-iteration-count: 1;
+            background-color:burlywood;
+        }
+        /*
+        .hand3{
+            width: 30px;
+            height: 100px;
+            border: 1px solid red;
+            margin-left: -150px;
+            margin-top: -120px;
+
+        }
+        
+        @keyframes prasanth{
+            from{
+             /* transform: rotate(-145deg);
+              /* transform: translateY(240px); */
+              
+       
+
+        
+        .hand4{
+            width: 30px;
+            height: 100px;
+            border: 1px solid red;
+            margin-left: -100px;
+            margin-top: -250px;
+            transform: rotate(55deg);
+            visibility: hidden;
+            animation-name: bheem;
+            animation-duration: 15s;
+            animation-iteration-count: 1;
+            background-color: burlywood;
+            animation-fill-mode: forwards;
+            
+         }
+         @keyframes bheem{
+            from{
+                opacity: 0;
+            }
+            to{
+                visibility: visible;
+                opacity: 1;
+            }
+         }
+         
+
+        .hand2{
+            width: 30px;
+            height: 150px;
+            border: 1px solid red;
+            margin-left: 195px;
+            margin-top: -100px;
+            transform: rotate(-40deg);
+            background-color: burlywood;
+        }
+          
+        @keyframes ok{
+            0%{
+                opacity: 0;
+                transform:translateY(-px);
+            }
+            100%{
+                opacity: 1;
+                transform: translateY(-px);
+            }
+        }
+        .two{
+            margin: 100px;
+          font-size: 40px;
+
+        }
+        .two span{
+            animation-name: ok;
+            animation-duration: 5s;
+            animation-fill-mode: forwards;
+            opacity: 0;
+            display: inline-block;
+            text-align: center;
+        
+
+
+        }
+       .child1{
+        animation-delay: 1s;
+        color: orange;
+       }
+       .child2{
+        animation-delay: 2s;
+        color: orange;
+       }
+       .child3{
+        animation-delay: 2.5s;
+        color: orange;
+       }
+       .child4{
+        animation-delay: 3.5s;
+        color: orange;
+       }
+       .child5{
+     animation-delay: 4s;
+     color: orange;
+       }
+       .child6{
+        animation-delay: 4.5s;
+        
+       }
+       .child7{
+        animation-delay: 5s;
+       }
+       .child8{
+        animation-delay: 5.5s;
+       }
+       .child9{
+        animation-delay: 6s;
+        color: blue;
+       }
+       .child10{
+     animation-delay: 6.5s;
+     color: blue;
+       }
+       .child11{
+     animation-delay: 7s;
+       }
+       .child12{
+     animation-delay: 8s;
+       }
+       .child13{
+     animation-delay: 8.5s;
+       }
+       .child14{
+     animation-delay: 9s;
+     color: green;
+       }
+       .child15{
+     animation-delay: 9.5s;
+     color: green;
+       }
+       .child16{
+     animation-delay: 10s;
+     color: green;
+       }
+
+
+    </style>
+</head>
+
+<body>
+    <div style="margin-left: 100px;">
+        <div class="stick"></div>
+        <div class="border">
+            <div class="orange"></div>
+            <div class="white"></div>
+            <div class="green"></div>
+
+        </div>
+        <div class="wheel"></div>
+        
+    </div>
+    <div style="margin-left: 700px; margin-top: -200px;">
+        <div class="heads"><img src="./104008-picture-whatsapp-emoji-free-download-png-hq.png"width="105px;"> </div>
+        <div class="body"></div>
+        <div class="leg1"></div>
+        <div class="leg2"></div>
+        <div class="hand1"></div>
+        <div class="hand2"></div>
+        <div class="hand3"></div>
+        <div class="hand4"></div>
+        
+   </div>
+   <div class="two">
+    &nbsp; &nbsp;&nbsp;&nbsp;<span class="child1">H</span>
+    <span class="child2">A</span>
+    <span class="child3">P</span>
+    <span class="child4">P</span>
+    <span class="child5">Y</span><br>
+   <span class="child6">R</span>
+    <span class="child7">E</span>
+    <span class="child8">P</span>
+    <span class="child9">U</span>
+    <span class="child10">B</span>
+    <span class="child11">L</span>
+    <span class="child12">I</span>
+    <span class="child13">C</span><br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="child14">D</span>
+    <span class="child15">A</span>
+    <span class="child16">Y</span>
+  
+</div>
+
+</html>
